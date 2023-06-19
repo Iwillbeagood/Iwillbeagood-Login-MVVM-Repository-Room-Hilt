@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.mvvmpattern.viewmodel.LoginViewModel" />
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="08dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtMainHead"
+                style="@style/Text.extra.large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/txt_label_srijan"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="08dp"
+                android:text="@string/txt_label_log_in"
+                android:textColor="@color/teal_700"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/txt_username_email"
+                android:textColor="@android:color/black" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="08dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edit_text_bg"
+                android:hint="@string/txt_email_hint"
+                android:inputType="text"
+                android:maxLines="1"
+                android:paddingStart="08dp"
+                android:paddingEnd="08dp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/txtUserNameError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="02dp"
+                android:layout_marginEnd="30dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="08dp"
+                android:layout_marginEnd="30dp"
+                android:text="@string/txt_label_password"
+                android:textColor="@android:color/black" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="08dp"
+                android:layout_marginEnd="30dp"
+                android:background="@drawable/edit_text_bg"
+                android:hint="@string/txt_password_hint"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:paddingStart="08dp"
+                android:paddingEnd="08dp"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/txtPasswordError"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="02dp"
+                android:layout_marginEnd="30dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="12sp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/mButtonLogin"
+                    style="@style/MaterialButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/txt_btn_label_login"
+                    android:textAllCaps="true"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</layout>

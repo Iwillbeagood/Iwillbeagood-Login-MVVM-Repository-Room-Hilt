@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MVPPattern</string>
+    <string name="txt_label_srijan">Team42:</string>
+    <string name="txt_label_log_in">Log in</string>
+    <string name="txt_label_user_name">User Name</string>
+    <string name="txt_label_password">Password</string>
+    <string name="txt_btn_label_login">Login</string>
+    <string name="txt_username_hint">Please enter user name</string>
+    <string name="txt_password_hint">Please enter password</string>
+    <string name="user_name_error_label">Enter proper user name</string>
+    <string name="password_error_label">Password not meeting the criteria</string>
+    <string name="txt_label_sign_in">sign In</string>
+    <string name="txt_label_id">ID</string>
+    <string name="txt_username_email">Email</string>
+    <string name="txt_email_hint">Please enter email</string>
+</resources>
